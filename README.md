@@ -21,10 +21,7 @@ This project is a simple invoice generator built with Laravel, demonstrating:
 git clone https://github.com/vkytnvemart/invoice-generate.git
 cd invoice-generator
 composer install
-cp .env.example .env
 php artisan key:generate
-composer require laravel/ui
-php artisan ui bootstrap --auth 
 npm install
 npm run dev
 php artisan migrate
