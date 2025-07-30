@@ -13,3 +13,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', [InvoiceController::class, 'create']);
 Route::post('/invoice', [InvoiceController::class, 'store']);
+

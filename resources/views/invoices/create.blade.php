@@ -7,25 +7,24 @@
 </head>
 <body class="bg-gray-100">
 
-    <!-- Navbar -->
+
     <nav class="bg-blue-600 p-4 text-white shadow-md">
         <div class="container mx-auto flex justify-between">
             <h1 class="text-xl font-semibold">Invoice Generator</h1>
-           
+
         </div>
     </nav>
 
-    <!-- Main Content -->
+
     <div class="max-w-xl mx-auto mt-10 bg-white p-8 rounded-lg shadow-lg">
 
-        <!-- Success Message -->
+
         @if(session('success'))
             <div class="mb-4 p-3 bg-green-100 text-green-800 rounded-md shadow-sm">
                 {{ session('success') }}
             </div>
         @endif
 
-        <!-- Form -->
         <form method="POST" action="/invoice" class="space-y-4">
             @csrf
 

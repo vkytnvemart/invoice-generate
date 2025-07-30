@@ -11,9 +11,7 @@ use App\Events\InvoiceCreated;
 
 class InvoiceController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    
   public function create() {
     return view('invoices.create');
 }
